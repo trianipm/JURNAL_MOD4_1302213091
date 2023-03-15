@@ -35,26 +35,75 @@ class KodeBuah
         }
     }
 }
+class PosisiKarakterGame
+{
+    enum State
+    {
+        Berdiri,
+        Tengkurap
+    }
+    private State state = State.Berdiri;
+    public void Berdiri()
+    {
+        state = State.Berdiri;
+        Console.WriteLine("posisi standby");
+    }
+    public void Tengkurap()
+    {
+        state = State.Tengkurap;
+        Console.WriteLine("posisi istirahat");
+    }
+}
 
 class Program
 {
     static void Main(string[] args)
     {
+        PosisiKarakterGame door = new PosisiKarakterGame();
+
         KodeBuah namaBuah = new KodeBuah();
         Console.WriteLine("Apel " + namaBuah.getKodeBuah("Apel"));
+        door.Berdiri();
+        door.Tengkurap();
         Console.WriteLine("Aprikot " + namaBuah.getKodeBuah("Aprikot"));
+        door.Berdiri();
+        door.Tengkurap();
         Console.WriteLine("Alpukat " + namaBuah.getKodeBuah("Alpukat"));
+        door.Berdiri();
+        door.Tengkurap();
         Console.WriteLine("Pisang " + namaBuah.getKodeBuah("Pisang"));
+        door.Berdiri();
+        door.Tengkurap();
         Console.WriteLine("Paprika " + namaBuah.getKodeBuah("Paprika"));
+        door.Berdiri();
+        door.Tengkurap();
         Console.WriteLine("Blackberry " + namaBuah.getKodeBuah("Blackberry"));
+        door.Berdiri();
+        door.Tengkurap();
         Console.WriteLine("Ceri " + namaBuah.getKodeBuah("Ceri"));
+        door.Berdiri();
+        door.Tengkurap();
         Console.WriteLine("Kelapa " + namaBuah.getKodeBuah("Kelapa"));
+        door.Berdiri();
+        door.Tengkurap();
         Console.WriteLine("Jagung " + namaBuah.getKodeBuah("Jagung"));
+        door.Berdiri();
+        door.Tengkurap();
         Console.WriteLine("Kurma " + namaBuah.getKodeBuah("Kurma"));
+        door.Berdiri();
+        door.Tengkurap();
         Console.WriteLine("Durian " + namaBuah.getKodeBuah("Durian"));
+        door.Berdiri();
+        door.Tengkurap();
         Console.WriteLine("Anggur " + namaBuah.getKodeBuah("Anggur"));
+        door.Berdiri();
+        door.Tengkurap();
         Console.WriteLine("Melon " + namaBuah.getKodeBuah("Melon"));
+        door.Berdiri();
+        door.Tengkurap();
         Console.WriteLine("Semangka " + namaBuah.getKodeBuah("Semangka"));
+        door.Berdiri();
+        door.Tengkurap();
         Console.WriteLine(namaBuah.getKodeBuah("Pepaya"));
     }
 }
